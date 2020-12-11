@@ -1,3 +1,4 @@
+
 class HikingInfo::CLI
   
   def call
