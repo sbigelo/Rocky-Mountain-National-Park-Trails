@@ -2,3 +2,6 @@ source "https://rubygems.org"
 
 # Specify your gem's dependencies in hiking_info.gemspec
 gemspec
+
+
+# git subtree add -P ZZZ /path/to/XXX.git master
