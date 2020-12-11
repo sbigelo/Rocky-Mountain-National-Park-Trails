@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
-require_relative
+
+require_relative '../lib/hiking_info'
 
 HikingInfo::CLI.new.call
+
+
+

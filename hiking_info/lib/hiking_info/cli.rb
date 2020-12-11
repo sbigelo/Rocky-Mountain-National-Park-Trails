@@ -1,4 +1,4 @@
-class HikingInfo::
+class HikingInfo::CLI
   
   def call
     puts "Welcome to the RMNP Trails Guide!"
