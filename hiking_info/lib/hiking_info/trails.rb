@@ -4,10 +4,7 @@ attr_accessor :name, :location, :features, :miles, :elevation_gain, :difficulty,
 
   def self.all
     # puts "Here is the list of hiking trails to choose from:"
-    # puts <<-DOC.gsub /^\s*/, ''
-    #   1. text 
-    #   2. text
-    #   DOC
+    # puts "1. text 2. text"
       
       trail_1 = self.new
       trail_1.name = "1"
@@ -17,6 +14,8 @@ attr_accessor :name, :location, :features, :miles, :elevation_gain, :difficulty,
       trail_1.elevation_gain = "113"
       trail_1.difficulty = "1.13"
       trail_1.link = "http://www.rockymountainhikingtrails.com/adams-falls.htm"
+      
+      [trail_1]
   end
   
 end
