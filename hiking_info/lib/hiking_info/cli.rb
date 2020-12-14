@@ -8,12 +8,8 @@ class HikingInfo::CLI
   end
   
   def list_trails
-    puts "Here is the list of hiking trails to choose from:"
-    puts <<-DOC.gsub /^\s*/, ''
-      1. text 
-      2. text
-      DOC
-      @trails = HikingTrails::Trails.all
+    puts "Here is a list of the hiking trails:"
+    @trails = HikingInfo::Trails.all
   end
   
   
