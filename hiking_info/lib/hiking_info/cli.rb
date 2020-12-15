@@ -1,6 +1,6 @@
 
 class HikingInfo::CLI
-  
+ 
   def call
     puts "Welcome to the RMNP Trails Guide!"
     list_trails
@@ -24,8 +24,14 @@ class HikingInfo::CLI
     input = gets.strip.downcase
     
     if input.to_i > 0
-      the_trails =  @trails[input.to_i - 1]
-      puts "#{the_trails.name}. Location: #{the_trails.location}. Features: #{the_trails.features}. Miles: #{the_trails.miles}. Elevation Gain: #{the_trails.elevation_gain}. Difficulty: #{the_trails.difficulty}. Link: #{the_trails.link}."
+      trail =  @trails[input.to_i - 1]
+      puts "Trail: #{trail.name}."
+      puts "Location: #{trail.location}." 
+      puts "Features: #{trail.features}." 
+      puts "Miles: #{trail.miles}." 
+      puts "Elevation Gain: #{trail.elevation_gain}."
+      puts "Difficulty: #{trail.difficulty}."
+      puts "Link: #{trail.link}."
     elsif input == "list"
       list_trails
     else
@@ -33,6 +39,10 @@ class HikingInfo::CLI
       end
     end
   end
+  
+  
+ 
+
   
   
 end
