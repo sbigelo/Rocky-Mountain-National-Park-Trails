@@ -9,7 +9,7 @@ class HikingInfo::CLI
   
   def list_trails
     puts "Here is a list of the hiking trails:"
-    @trails = HikingInfo::Trails.all
+    @trails = HikingInfo::Scraper.all
     @trails.each.with_index(1) do |trail, i|
       puts "#{i}. #{trail.name}"
     end
@@ -31,7 +31,7 @@ class HikingInfo::CLI
       puts "Miles: #{trail.miles}." 
       puts "Elevation Gain: #{trail.elevation_gain}."
       puts "Difficulty: #{trail.difficulty}."
-      puts "Link: #{trail.link}."
+      puts "Link: #{trail.link}"
     elsif input == "list"
       list_trails
     else

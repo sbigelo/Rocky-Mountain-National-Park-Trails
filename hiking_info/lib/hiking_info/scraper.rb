@@ -43,7 +43,7 @@ attr_accessor :name, :location, :features, :miles, :elevation_gain, :difficulty,
       trail.miles = key.css(".xl67").css("font").text
       trail.elevation_gain = key.css(".xl68").css("font").text
       trail.difficulty = key.css(".xl70").css("font").text
-      trail.link = key.css(".xl66").css("a").map {|link| link['href']}
+      trail.link = key.css(".xl66").css("a").map {|link| link['href']}[0]
       
       
      
