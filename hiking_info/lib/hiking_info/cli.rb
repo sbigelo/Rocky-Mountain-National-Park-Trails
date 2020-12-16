@@ -3,6 +3,7 @@ class HikingInfo::CLI
  
   def call
     puts "Welcome to the RMNP Trails Guide!"
+    welcome
     list_trails
     trails_info
   end
