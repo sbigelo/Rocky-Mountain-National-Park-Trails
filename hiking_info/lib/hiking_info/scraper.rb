@@ -5,7 +5,7 @@ class HikingInfo::Scraper
     trailss = doc.css("tbody").css("tr")
     
     trailss.each do |key|
-      name = key.css("td").css("span").text unless key.css("td").css("span").text == nil then key.css(".xl71").css("font").text
+      name = key.css("td").css("span").text 
       location = key.css("td")[1].css("font").text
       features = key.css("font")[2].text
       miles = key.css(".xl67").css("font").text
@@ -17,3 +17,7 @@ class HikingInfo::Scraper
   end
 
 end
+
+
+# this SHOULD return the additional titles that do not have a link with a seperate class. It works on the repl.it scraper 
+# or key.css(".xl71").css("font").text 

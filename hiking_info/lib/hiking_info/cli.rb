@@ -47,7 +47,7 @@ class HikingInfo::CLI
     
     if input.to_i > 0
       trail =  HikingInfo::Trails.find_by_index(input.to_i - 1)
-      puts "______________________________________________________________________________________"
+      puts "________________________________________________________________________________"
       puts "Trail: #{trail.name}."
       puts "Location: #{trail.location}." 
       puts "Features: #{trail.features}." 
@@ -55,7 +55,7 @@ class HikingInfo::CLI
       puts "Elevation Gain: #{trail.elevation_gain}."
       puts "Difficulty: #{trail.difficulty}."
       puts "Link: #{trail.link}"
-      puts "______________________________________________________________________________________"
+      puts "________________________________________________________________________________"
       trails_info
     elsif input == "list"
       list_trails
