@@ -1,26 +1,21 @@
 # HikingInfo
+In this Command Line Interface you will be able to access the many Hiking Trails located in the Rocky Mountain National Park.
 
-Find out more details on a specific hikng trail in the Rocky Mountains.
+You will be able to find out more details on any of the hikng trails.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Clone the repository, then execute:
 
-```ruby
-gem 'hiking_info'
-```
+    $ cd hiking_info
 
-And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install hiking_info
 
 ## Usage
 
-TODO: Write usage instructions here
+Execute to begin:
+
+    $ ./bin/hiking-info
 
 ## Development
 
