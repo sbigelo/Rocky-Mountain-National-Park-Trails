@@ -31,11 +31,6 @@ class HikingInfo::CLI
     else 
       puts "Incorrect input. To head out, type 'exit' or to see the list of Hiking Trails type 'list'."
       list_trails
-   
-    # puts "Here is a list of the hiking trails:"
-    # @trails = HikingInfo::Scraper.all
-    # @trails.each.with_index(1) do |trail, i|
-    #   puts "#{i}. #{trail.name}"
     end
   end
   

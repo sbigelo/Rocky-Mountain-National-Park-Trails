@@ -11,7 +11,7 @@ class HikingInfo::Scraper
       miles = key.css(".xl67").css("font").text
       elevation_gain = key.css(".xl68").css("font").text
       difficulty = key.css(".xl70").css("font").text
-      link = key.css(".xl66").css("a").map {|link| link['href']}
+      link =  key.css(".xl72, .xl66").css("a").map {|link| link['href']}
       HikingInfo::Trails.new(name, location, features, miles, elevation_gain, difficulty, link)
     end
   end
