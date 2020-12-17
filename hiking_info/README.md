@@ -1,7 +1,7 @@
 # Hiking Info
 In this Command Line Interface you will be able to access the many Hiking Trails located in the Rocky Mountain National Park.
 
-You will be able to find out more details on any of the hikng trails.
+You will be able to find out more details on any of the hiking trails.
 
 ## Installation
 
