@@ -24,12 +24,15 @@ class HikingInfo::CLI
     if input == "list"
       puts ""
       trails = HikingInfo::Trails.all
+      trails.slice!(0)
+      trails.slice!(53)
+      trails.slice!(73)
       trails.each.with_index(1) {|trail, i| puts "#{i}. #{trail.name}"}
     elsif input == "exit"
-      system clear or system "cls"
+      system "cls"
       exit
     else 
-      puts "Incorrect input. To head out, type 'exit' or to see the list of Hiking Trails type 'list'."
+      puts "Incorrect input. To see the list f Hiking Trails type 'list' or to head out, type 'exit'."
       list_trails
     end
   end
@@ -40,7 +43,7 @@ class HikingInfo::CLI
     puts "Please enter a number that is associated with the trail that you would like to know more about. If you would like to exit, type 'exit'"
     input = gets.strip.downcase
     
-    if input.to_i > 0
+    if input.to_i > 0 && input.to_i < 81
       trail =  HikingInfo::Trails.find_by_index(input.to_i - 1)
       puts "________________________________________________________________________________"
       puts "Trail: #{trail.name}."
@@ -55,10 +58,13 @@ class HikingInfo::CLI
     elsif input == "list"
       list_trails
     elsif input == "exit"
+      puts ""
       puts "Goodbye and thanks for visiting!"
-      system "clear" or system "cls"
+      puts ""
+      system "cls"
     else
       puts "Invalid input. Type 'list' or 'exit'."
+      puts ""
       trails_info
       end
     end
