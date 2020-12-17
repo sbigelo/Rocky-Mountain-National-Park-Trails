@@ -32,7 +32,7 @@ class HikingInfo::CLI
       system "cls"
       exit
     else 
-      puts "Incorrect input. To see the list f Hiking Trails type 'list' or to head out, type 'exit'."
+      puts "Incorrect input. To see the list of Hiking Trails type 'list' or to head out, type 'exit'."
       list_trails
     end
   end
