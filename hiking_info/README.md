@@ -5,10 +5,13 @@ You will be able to find out more details on any of the hiking trails.
 
 ## Installation
 
-Clone the repository, then execute:
+Clone the repository with SSH:
+
+    $ git clone git@github.com:sbigelo/Rocky-Mountain-National-Park-Trails.git
+
+Then execute:
 
     $ cd hiking_info
-
 
 
 ## Usage
