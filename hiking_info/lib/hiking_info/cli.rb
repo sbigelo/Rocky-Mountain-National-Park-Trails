@@ -1,4 +1,4 @@
-
+require 'pry'
 class HikingInfo::CLI
 
   def call
@@ -27,6 +27,7 @@ class HikingInfo::CLI
       trails.slice!(0)
       trails.slice!(53)
       trails.slice!(73)
+        # binding.pry
       trails.each.with_index(1) {|trail, i| puts "#{i}. #{trail.name}"}
     # elsif input == "bounce"
     #   exit
@@ -37,6 +38,9 @@ class HikingInfo::CLI
   end
 
   def exit
+    puts ""
+    puts "Goodbye and thanks for visiting!"
+    puts ""
     system "cls"
   end
 
@@ -59,11 +63,8 @@ class HikingInfo::CLI
       puts "________________________________________________________________________________"
       trails_info
     elsif input == "list"
-      list_trails
+      trails_info
     elsif input == "exit"
-      puts ""
-      puts "Goodbye and thanks for visiting!"
-      puts ""
       exit
     else
       puts "Invalid input. Remeber to type 'list' or 'exit'."
