@@ -15,8 +15,8 @@ class HikingInfo::CLI
     puts " ///   Welcome to the RMNP Hiking Trails Guide!    \\\\\\"
     puts "////                                              \\\\\\\\"
     puts ""
-    puts "To see the list of hiking trails, type list."
-    puts "To leave, type exit."
+    puts "     To see the list of hiking trails, type list."
+    puts ""
   end
 
   def list_trails
@@ -28,21 +28,21 @@ class HikingInfo::CLI
       trails.slice!(53)
       trails.slice!(73)
       trails.each.with_index(1) {|trail, i| puts "#{i}. #{trail.name}"}
-    elsif input == "exit"
-      exit
+    # elsif input == "bounce"
+    #   exit
     else
-      puts "Incorrect input. To see the list of Hiking Trails type 'list' or to head out, type 'exit'."
+      puts "Incorrect input. To see the list of Hiking Trails type 'list'."
       list_trails
     end
   end
 
   def exit
-    # system "cls"
+    system "cls"
   end
 
   def trails_info
-    input = nil
-    while input != "exit"
+    # input = nil
+    # while input != "exit"
     puts "Please enter a number that is associated with the trail that you would like to know more about. If you would like to exit, type 'exit'"
     input = gets.strip.downcase
 
@@ -70,6 +70,6 @@ class HikingInfo::CLI
       puts ""
       list_trails
       end
-    end
+    # end
   end
 end
