@@ -15,6 +15,8 @@ Clone the repository, then execute:
 
 Execute to begin:
 
+    $ bundle install
+
     $ ./bin/hiking-info
 
 ## Development
