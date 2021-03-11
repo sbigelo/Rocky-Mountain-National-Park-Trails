@@ -1,3 +1,4 @@
+require 'pry'
 class HikingInfo::Trails
 
 attr_accessor :name, :location, :features, :miles, :elevation_gain, :difficulty, :link
